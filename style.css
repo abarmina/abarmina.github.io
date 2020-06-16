@@ -1,0 +1,237 @@
+/* all files */
+html, body {
+    height: 100vh;
+}
+
+p, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #5CA4A9;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+input:not([type="submit"]), textarea {
+    width: 300px;
+    padding: 5px;
+}
+
+textarea {
+    min-height: 90px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    background-color: #E6EBE0;
+    color: #2D3436;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #9BC1BC;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.header__link {
+    color: #2D3436;
+    font-weight: 500;
+    padding: 10px;
+    border: 1px solid #2D3436;
+    border-radius: 20px;
+}
+
+.header__link--first {
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.header__link:hover {
+    background-color: #5CA4A9;
+    font-weight: 600;
+}
+
+.header__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mr-1 {
+    margin-right: 20px;
+}
+
+.main {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__left {
+    position: relative;
+    margin-right: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ED6A5A;
+}
+
+.footer__link {
+    padding: 10px;
+    margin-right: 10px;;
+}
+
+
+/* index.html */
+.main__title {
+    font-family: 'Lato', sans-serif;
+    text-shadow: 0px 4px 8px rgba(38, 50, 56, 0.08), 0px 2px 4px rgba(38, 50, 56, 0.16);
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 85px;
+    left: -140px;
+}
+
+.main__subtitle {
+    margin-top: 10px;
+    line-height: 26px;
+}
+
+.main__content {
+    columns: 2;
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(244, 241, 187, 0.7);
+    box-shadow: 0px 4px 8px rgba(38, 50, 56, 0.08), 0px 2px 4px rgba(38, 50, 56, 0.16);
+}
+  
+.main__text {
+    float: left;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    text-align: justify;
+}
+
+/* about-me.html */
+.main__left--about-me {
+    min-width: 200px;
+}
+
+.lorem {
+    position: absolute;
+    left: -140px;
+    top: -130px;
+    width: 400px;
+    height: 250px;
+    background-color: #F4F1BB;
+    transform: rotate(-90deg);
+    overflow: hidden
+}
+
+.lorem__text {
+    text-align: justify;
+    height: 100%;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.main__description {
+    margin-top: 20px;
+    display: flex;
+    height: 350px;
+    background-color: rgba(92, 164, 169, 0.3);
+    box-shadow: 0px 4px 8px rgba(38, 50, 56, 0.08), 0px 2px 4px rgba(38, 50, 56, 0.16);
+}
+
+.main__field {
+    width: 600px;
+}
+
+.main__link {
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__link:hover {
+    background-color: #F4F1BB;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.main__link:active + .main__link--open,
+.main__link:hover + .main__link--open,
+.main__link:focus + .main__link--open
+{
+    display: block;
+}
+
+.main__link--open {
+    display: none;
+    padding: 20px;
+    background-color: rgba(244, 241, 187, 0.7);
+}
+
+/* contacts.html */
+.main__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    margin-top: 20px;
+    border: 1px solid #2D3436;
+    box-shadow: 0px 4px 8px rgba(38, 50, 56, 0.08), 0px 2px 4px rgba(38, 50, 56, 0.16);
+    border-radius: 20px;
+    background: rgba(244, 241, 187);
+    padding: 10px;
+}
+
+.form__field {
+    padding: 7px;
+}
+
+.form__button {
+    color: #2D3436;
+    font-weight: 500;
+    padding: 11px;
+    border: 1px solid #2D3436;
+    border-radius: 20px;
+    background-color: #9BC1BC;
+    margin-left: 100px;
+}
+
+.form__button:hover {
+    background-color: #5CA4A9;
+    font-weight: 600;
+}
